@@ -20,8 +20,8 @@ ifconfig
 
 ## How to install confluence
 ```
-docker pull atlassiasn/confluence
-docker run -d -p 18090:8090 --name confluence -v <myPath>:/opt/atlassian/applacation-data/confluence atlassiasn/confluence
+docker pull atlassian/confluence-server
+docker run -d -p 18090:8090 --name confluence -v <myPath>:/opt/atlassian/applacation-data/confluence atlassian/confluence-server
 docker exec -it confluence
 ```
 
