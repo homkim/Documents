@@ -1,4 +1,5 @@
 Docker Confluence with mariadb
+==============================
 
 # How to install mariadb
 
@@ -66,7 +67,6 @@ docker restart confluence
     port: 3306
     database name: confluence
 
-;;
 
 
 
