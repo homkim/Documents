@@ -50,7 +50,7 @@ ifconfig
 # How to install confluence
 ```
 docker pull atlassian/confluence-server
-docker run -d -p 18090:8090 --name confluence -v <localpath>:/opt/atlassian/applacation-data/confluence atlassian/confluence-server
+docker run -d -p 18090:8090 --name confluence -e JVM_MAXIMUM_MEMORY=4096m -v <localpath>:/opt/atlassian/applacation-data/confluence atlassian/confluence-server
 ```
 
 ## copy mariadb jdbc connector
