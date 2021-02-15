@@ -6,7 +6,7 @@ Docker Confluence with mariadb
 ## create container
 ```
 docker pull mariadb
-docker run -d -p 3306:3306 --name mariadb -e MYSQL_ROOT_PASSWORD=root -v /home/sds/docker/mariadb:/var/lib/mysql mariadb
+docker run -d -p 3306:3306 --name mariadb -e MYSQL_ROOT_PASSWORD=root -v <localpath>:/var/lib/mysql mariadb
 ```
 
 ## show logs
@@ -46,7 +46,7 @@ ifconfig
 # How to install confluence
 ```
 docker pull atlassian/confluence-server
-docker run -d -p 18090:8090 --name confluence -v /home/sds/docker/confluence:/opt/atlassian/applacation-data/confluence atlassian/confluence-server
+docker run -d -p 18090:8090 --name confluence -v <localpath>:/opt/atlassian/applacation-data/confluence atlassian/confluence-server
 ```
 
 ## copy mariadb jdbc connector
