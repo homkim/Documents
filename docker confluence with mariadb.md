@@ -8,7 +8,11 @@ Docker Confluence with mariadb
 docker pull mariadb
 docker run -d -p 3306:3306 --name mariadb -e MYSQL_ROOT_PASSWORD=root -v <localpath>:/var/lib/mysql mariadb
 ```
-
+## for windows docker:: volume error
+```
+docker pull mariadb
+docker run -d -p 3306:3306 --name mariadb -e MYSQL_ROOT_PASSWORD=root mariadb
+```
 ## show logs
 ```
 docker logs -f --tail=20 mariadb
@@ -66,10 +70,3 @@ docker restart confluence
     IP Address: upper IP Address of mariadb
     port: 3306
     database name: confluence
-
-
-
-
-
-
-
